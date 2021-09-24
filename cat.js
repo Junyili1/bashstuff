@@ -1,6 +1,9 @@
-import { readFile } from 'fs';
+const fs = require('fs');
 
-readFile('/etc/passwd', (err, data) => {
-  if (err) throw err;
-  console.log(data);
-});
+module.exports = function(file){
+  fs.readFile(file, 'utf8', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+    process.stdout.write("\nprompt > ")
+  });
+}
