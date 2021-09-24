@@ -1,0 +1,22 @@
+{
+  "name": "bash-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junyili1/bashstuff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junyili1/bashstuff/issues"
+  },
+  "homepage": "https://github.com/Junyili1/bashstuff#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

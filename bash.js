@@ -2,7 +2,7 @@ process.stdout.write('prompt > ');
 const pwd = require('./pwd.js')
 const fs = require('./ls.js')
 const cat = require('./cat.js')
-const curl = require('request')
+const curl = require('./curl.js')
 
 process.stdin.on('data', (data) =>{
   const cmd = data.toString().trim().split(' ');
@@ -15,6 +15,9 @@ process.stdin.on('data', (data) =>{
   }
   else if(cmd[0] == 'cat'){
     cat(cmd[1])
+  }
+  else if(cmd[0] == 'curl'){
+    curl(cmd[1])
   }
   else {
     process.stdout.write('You typed: ' + cmd);
